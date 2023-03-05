@@ -1,0 +1,95 @@
+
+:root {
+    --main-font: 3vh;
+    --back-color: #222;
+    --main-color: #eee;
+    --link-color: #9ce;
+}
+
+body {
+    overflow-x: hidden;
+    background: var(--back-color);
+    color: var(--main-color);
+
+}
+
+hr {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    border:none;
+    border-top: 1px solid gray;
+}
+
+img {
+    height: 100%;
+}
+
+/* unvisited link */
+a:link {
+  color: var(--link-color);
+}
+
+/* visited link */
+a:visited {
+  color: var(--link-color);
+}
+
+/* mouse over link */
+a:hover {
+  color: var(--link-color);
+}
+
+/* selected link */
+a:active {
+  color: var(--link-color);
+}
+
+.title {
+    font-size: 5vh;
+    margin-left: 50vw;
+    /*font-weight: bold;*/
+    text-decoration: underline;
+}
+
+.project_block {
+    margin-top: 7vh;
+}
+
+.project_title {
+    font-size: 4vh;
+    margin-left: 20vw;
+    /*font-weight: 500;*/
+    /*text-decoration: underline;*/
+}
+
+.views_cnt {
+    font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+    font-size: 2.3vh;
+    margin-left: 45vw;
+}
+
+.description {
+    /*font-style: oblique;*/ /*| oblique;*/
+    font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+    font-size: 2vh;
+    margin-top: 1vh;
+    margin-left: 5vw;
+}
+
+.images_block {
+    /*display: grid;
+    grid-template-columns: repeat(auto);
+    grid-template-rows: 1fr;*/
+    display: flex;
+    overflow-x: scroll;
+    height: 40vh;
+}
+
+.image {
+    height: 40vh;
+    margin-right: 3vw;
+    margin-left: 3vw;
+    /*max-width: 30vh;*/
+}
+
+
