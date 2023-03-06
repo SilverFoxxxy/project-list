@@ -38,11 +38,16 @@ function typed_text(text, k) {
     if (k >= text.length) {
         return text;
     }
+    if (k == 0) {
+        return '<span class="hidden">' +
+            text +
+            '</span>';
+    }
     let text_no_br = text.replaceAll('<br>', '%');
     let part1 = text_no_br.slice(0, k);
     let part2 = text_no_br.slice(k);
     let resp = part1 +
-            '<span class="hidden">' +
+            '<div class="type_symbol"></div><span class="hidden">' +
             part2 +
             '</span>';
     // console.log(part1, '#', part2);

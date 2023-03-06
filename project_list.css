@@ -101,11 +101,23 @@ a:active {
 
 .hidden {
     color: transparent;
-    text-decoration: none;
 }
 
 .typed {
     visibility: var(--visible);
+}
+
+.type_symbol {
+    display:inline;
+    position: relative;
+}
+
+.type_symbol:before {
+    position: absolute;
+    bottom: -0.2em;
+    left: 0.0em;
+    font-size: 1em;
+    content: '𝙸';
 }
 
 
