@@ -19,7 +19,7 @@ function getCookie(name) {
     }
     return null;
 }
-function eraseCookie(name) {   
+function eraseCookie(name) {
     document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
 }
 
@@ -69,7 +69,6 @@ function type_step() {
         let r = document.querySelector(':root');
         r.style.setProperty('--visible', 'visible');
     }
-
 
     window.cur_len += Math.ceil(1 + (window.step_len[window.cur_lvl] - 1) * Math.random());
 }
@@ -154,8 +153,8 @@ function start_type_lvl(lvl=0) {
 
             if (has_class(elem, window.step_classes[window.cur_lvl])) {
                 let cur_len = window.textes[elem.id].length;
-                if (cur_len > window.max_len) {
-                    window.max_len = cur_len;
+                if (cur_len + window.step_len[window.cur_lvl] > window.max_len) {
+                    window.max_len = cur_len + window.step_len[window.cur_lvl];
                 }
             }
 
