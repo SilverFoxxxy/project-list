@@ -1,6 +1,7 @@
 
 :root {
-    --main-font: 3vh;
+    --main-font: 1.75rem;
+    /* --main-font: 3vh; */
     --back-color: #222;
     --main-color: #eee;
     --link-color: #9ce;
@@ -97,7 +98,7 @@ a:active {
     grid-template-rows: 1fr;*/
     display: flex;
     overflow-x: scroll;
-    height: 40vh;
+    height: 15em;
     max-height: 60vw;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
@@ -137,7 +138,7 @@ a:active {
 }
 
 .container {
-    max-width: 175vh;
+    max-width: 55em;
     margin: auto;
 }
 
